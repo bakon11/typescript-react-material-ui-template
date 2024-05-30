@@ -1,18 +1,22 @@
-import ReactDOM from "react-dom";
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import MyApp from "./containers/MyApp";
+import ReactDOM from "react-dom/client";
+import { ReusableProvider } from "reusable";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Index from "./containers/index/Index";
 
 const routing = (
-  <BrowserRouter>
-    <Switch>
-      <Route exact path="/">
-          <MyApp />
-      </Route>
-    </Switch>
-  </BrowserRouter>
+  <Router>
+    <Routes>
+      <Route path="/" element={ <Index /> } />
+    </Routes>
+  </Router>
 );
 
-ReactDOM.render(
-  routing, document.getElementById("root")
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <ReusableProvider>
+      <React.StrictMode>
+        { routing }
+      </React.StrictMode>
+  </ReusableProvider>
 );

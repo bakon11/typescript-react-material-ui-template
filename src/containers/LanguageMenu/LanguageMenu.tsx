@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Menu, MenuItem, Tooltip, Button } from "@material-ui/core";
+import { Menu, MenuItem, Tooltip, Button } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { supportedLanguages, reverseSupportedLanguages } from "../../i18n";
 
@@ -34,7 +34,7 @@ const LanguageMenu: React.FC = (props) => {
         onClose={handleClose}
       >
         {Object.values(supportedLanguages).map((lang, i) => (
-          <MenuItem onClick={(event) => handleMenuItemClick(lang)}>{lang}</MenuItem>
+          <MenuItem onClick={(event: any) => handleMenuItemClick(lang)}>{lang}</MenuItem>
         ))}
       </Menu>
     </>
