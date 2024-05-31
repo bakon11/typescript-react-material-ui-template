@@ -1,8 +1,8 @@
 {
-  "name": "@etclabscore/pristine-typescript-react-material-ui",
+  "name": "@bakon11/typescript-react-material-ui-template",
   "version": "0.0.0-development",
   "homepage": "./",
-  "description": "",
+  "description": "A starting point for Typescript, React, Material UI theming, moment.js and i18next.",
   "main": "build/index.js",
   "scripts": {
     "start": "react-scripts start",
