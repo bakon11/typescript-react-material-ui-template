@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { ReusableProvider } from "reusable";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Index from "./containers/index/Index";
+import Home from "./containers/Home/Home";
 
 const routing = (
   <Router>
     <Routes>
-      <Route path="/" element={ <Index /> } />
+      <Route path="/" element={ <Home /> } />
     </Routes>
   </Router>
 );

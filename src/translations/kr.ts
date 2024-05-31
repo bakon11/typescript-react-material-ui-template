@@ -2,7 +2,7 @@ export default {
   // Moment integration
   "Date": "{{date, date}}",
   // App Bar
-  "Pristine": "Pristine",
+  "Home": "Home",
   "Change Language": "언어 변경",
   "Toggle Dark Mode": "블랙모드 변경",
   "Configuration": "구성",
