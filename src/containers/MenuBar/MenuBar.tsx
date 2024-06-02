@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import LanguageMenu from "../LanguageMenu";
 
 const MenuBar: React.FC = () => {
-  const darkMode: any = useDarkMode();
+  const [ darkMode, setDarkMode ]: any = useDarkMode();
   const { t, i18n } = useTranslation();
 
   return (
@@ -21,7 +21,7 @@ const MenuBar: React.FC = () => {
             <Grid item>
               <LanguageMenu />
               <Tooltip title={t("Toggle Dark Mode")}>
-                <IconButton onClick={darkMode}>
+                <IconButton onClick={ () => setDarkMode(darkMode ? false : true) }>
                   {darkMode ? <Brightness3Icon /> : <WbSunnyIcon />}
                 </IconButton>
               </Tooltip>

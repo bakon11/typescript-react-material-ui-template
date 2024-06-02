@@ -13,7 +13,7 @@ import LanguageMenu from "../LanguageMenu";
 import "./Home.css";
 
 const Home: React.FC = () => {
-  const darkMode: any = useDarkMode();
+  const [ darkMode, setDarkMode ]: any = useDarkMode();
   const { t, i18n } = useTranslation();
   const theme = darkMode ? darkTheme : lightTheme;
 
